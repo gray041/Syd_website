@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Siddhi | UI/UX Designer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="progress-line" id="progressLine"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <div class="portfolio-shell">
+
+    <header class="topbar">
+      <a href="#home" class="brand">S/</a>
+
+      <nav class="desktop-nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="talk-btn" id="talkBtn">Let’s talk <span>✳</span></button>
+
+      <button class="mobile-menu-btn" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        Menu
+      </button>
+    </header>
+
+    <div class="offcanvas offcanvas-end custom-menu" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header">
+        <h5>Siddhi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <a href="#work" data-bs-dismiss="offcanvas">Work</a>
+        <a href="#about" data-bs-dismiss="offcanvas">About</a>
+        <a href="#process" data-bs-dismiss="offcanvas">Process</a>
+        <a href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero-copy">
+          <h1>Siddhi</h1>
+          <h2>UI/UX Designer</h2>
+
+          <p>
+            I design digital experiences that are intentional, intuitive and
+            <span>human.</span>
+          </p>
+
+          <a href="#work" class="text-link">View selected work ↓</a>
+        </div>
+
+        <div class="hero-visual">
+          <p class="scribble scribble-left">
+            problem solver<br>
+            designer
+          </p>
+
+          <svg class="draw-arrow" viewBox="0 0 180 110">
+            <path d="M15 42 C52 13, 92 19, 126 53"></path>
+            <path d="M126 53 L103 43"></path>
+            <path d="M126 53 L108 75"></path>
+          </svg>
+
+          <div class="portrait-card" id="portraitCard">
+            <img src="potrait_siddhi.png" alt="Siddhi profile photo" class="profile-photo">
+          </div>
+        </div>
+
+        <aside class="hero-stats">
+          <p class="vertical-text">Available for new projects</p>
+
+          <div class="stat-block">
+            <h3>04+</h3>
+            <p>Years of experience</p>
+          </div>
+
+          <div class="stat-block">
+            <h3>06+</h3>
+            <p>Projects selected</p>
+          </div>
+
+          <div class="stat-block">
+            <h3>03</h3>
+            <p>Research focused projects</p>
+          </div>
+
+          <p class="scribble impact-note">
+            impact<br>
+            driven<br>
+            design
+          </p>
+        </aside>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="work-intro">
+          <h2>Selected<br>Work <span>✱</span></h2>
+
+          <p>
+            A curated selection of branding, UI design, mobile app, e-learning, accessibility and UX research projects.
+          </p>
+
+          <button class="black-action" id="moreProjectsBtn">
+            View more projects <span>→</span>
+          </button>
+        </div>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="kangaro.png" alt="Kangaro stationery brand rebranding and UI design project" class="project-photo">
+            <span class="project-no">01</span>
+            <span class="project-tag">Solo</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Kangaro</h3>
+            <p>Stationery brand rebranding and Amazon storefront UI design.</p>
+            <a href="kangaro.html">View case study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="cartlyst.png" alt="Cartlyst smart cart UX and UI team project" class="project-photo">
+            <span class="project-no dark-no">02</span>
+            <span class="project-tag team">Team</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Cartlyst</h3>
+            <p>Smart cart experience designed to make grocery shopping easier.</p>
+            <a href="cartlyst.html">View case study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="eLearning.png" alt="Photography e-learning website solo project" class="project-photo">
+            <span class="project-no">03</span>
+            <span class="project-tag">Solo</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Photography E-Learning</h3>
+            <p>Interactive learning website for tabletop photography and lighting.</p>
+            <a href="photography-elearning.html">View case study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="ixigo.png" alt="Ixigo travel mobile application solo project" class="project-photo">
+            <span class="project-no dark-no">04</span>
+            <span class="project-tag">Solo</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Ixigo Travel App</h3>
+            <p>Travel app redesign for smoother booking, seat selection and checkout.</p>
+            <a href="ixigo.html">View case study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card extra-project">
+          <div class="project-image">
+            <img src="assesblity.png" alt="SightSense accessibility UX research solo project" class="project-photo">
+            <span class="project-no dark-no">05</span>
+            <span class="project-tag">Solo</span>
+          </div>
+
+          <div class="project-content">
+            <h3>SightSense Accessibility Research</h3>
+            <p>Research study on context-aware smart assistants for blind and low-vision users.</p>
+            <a href="accessibility.html">View case study ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card extra-project">
+          <div class="project-image">
+            <img src="cashback.png" alt="Cashback wallet UX research and redesign project" class="project-photo">
+            <span class="project-no">06</span>
+            <span class="project-tag team">Team</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Cashback Wallet</h3>
+            <p>UX evaluation and redesign for a digital wallet cashback experience.</p>
+            <a href="cashback-wallet.html">View case study ↗</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="about-process">
+        <div class="about-panel" id="about">
+          <span class="about-chip">About me ✳</span>
+
+          <div class="polaroid-card">
+            <img src="potrait_siddhi.png" alt="Siddhi profile photo" class="about-photo">
+          </div>
+
+          <div class="about-copy">
+            <h2>
+              I’m Siddhi, a UI/UX designer who enjoys turning ideas, research and messy problems into clear digital experiences.
+            </h2>
+
+            <p>
+              I have worked on solo and team projects across rebranding, mobile UI, e-learning, accessibility and UX research.
+              I care about thoughtful design, clean visuals, user needs and creating products that feel simple to use.
+            </p>
+
+            <a href="#">Download resume ↓</a>
+          </div>
+        </div>
+
+        <div class="process-panel" id="process">
+          <div class="process-header">
+            <h2>My Process <span>✱</span></h2>
+            <p class="scribble process-note">design is<br>a loop, not<br>a straight line.</p>
+          </div>
+
+          <div class="process-cards">
+            <div class="process-card">
+              <span>01</span>
+              <h3>Discover</h3>
+              <p>I start by understanding the users, brand, context and the real problem behind the project.</p>
+            </div>
+
+            <div class="process-card">
+              <span>02</span>
+              <h3>Define</h3>
+              <p>I organize research, user needs, flows and design goals into a clear direction.</p>
+            </div>
+
+            <div class="process-card">
+              <span>03</span>
+              <h3>Design</h3>
+              <p>I create wireframes, visual design, UI systems and prototypes that feel polished and usable.</p>
+            </div>
+
+            <div class="process-card">
+              <span>04</span>
+              <h3>Refine</h3>
+              <p>I improve the experience through feedback, testing, iteration and final design cleanup.</p>
+            </div>
+          </div>
+
+          <div class="tools">
+            <h3>Skills & Tools <span>✳</span></h3>
+
+            <div class="tool-list">
+              <span>Figma</span>
+              <span>FigJam</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Illustrator</span>
+              <span>Photoshop</span>
+              <span>UX Research</span>
+              <span>Prototyping</span>
+              <span>Adobe XD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-salmon">
+          <h2>Let’s create<br>something great</h2>
+          <i></i>
+        </div>
+
+        <div class="contact-copy">
+          <h3>I’m currently open to UI/UX design, product design and research opportunities.</h3>
+          <p>✉ siddhin04@outlook.com </p>
+          <p>↗ Open to work worldwide</p>
+        </div> 
+
+        <div class="sticky-note" id="stickyNote">
+          <b></b>
+          <p>Good design<br>solves real problems.<br>Let’s build<br>something useful. ☺</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Siddhi</p>
+
+      <div>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://medium.com/" target="_blank">Medium</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

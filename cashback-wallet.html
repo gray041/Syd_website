@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cashback Wallet UX Research | Siddhi</title>
+  <link rel="stylesheet" href="cashback-wallet.css" />
+</head>
+
+<body>
+  <div class="progress-line" id="progressLine"></div>
+
+  <main class="case-shell" id="top">
+
+    <header class="case-nav">
+      <a href="index.html" class="brand">S/</a>
+
+      <nav>
+        <a href="index.html#work">Back</a>
+        <a href="#problem">Problem</a>
+        <a href="#research">Research</a>
+        <a href="#findings">Findings</a>
+        <a href="#redesign">Redesign</a>
+        <a href="#final">Final</a>
+      </nav>
+
+      <a href="#research" class="nav-button">Research ↗</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <p class="hero-mini-heading">UX RESEARCH PROJECT</p>
+
+        <h1>SAVR.</h1>
+
+        <h2>
+          A cashback wallet experience designed around clarity, trust and everyday value.
+        </h2>
+
+        <p class="hero-description">
+          This project studies how users understand cashback inside a digital wallet. The research focused on balance clarity, reward visibility, payment confidence and whether users could trust the wallet before linking money-related accounts.
+        </p>
+
+        <div class="hero-tags">
+          <span>UX Research</span>
+          <span>Digital Wallet</span>
+          <span>Cashback Rewards</span>
+          <span>Usability Testing</span>
+          <span>Fintech UX</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="note-card">
+          Rewards should feel instant, clear and trustworthy.
+        </div>
+
+        <div class="hero-dot"></div>
+
+        <div class="square-photo-wrap">
+          <div class="square-photo-shadow"></div>
+          <div class="square-photo-box">
+            <img src="cashback.png" alt="Cashback wallet mockup" />
+          </div>
+        </div>
+
+        <p class="hand-note">save smarter.</p>
+      </div>
+    </section>
+
+    <section class="project-snapshot">
+      <div>
+        <span>Project</span>
+        <h3>Cashback Wallet UX Evaluation</h3>
+      </div>
+
+      <div>
+        <span>Role</span>
+        <h3>UX Researcher / Prototype Refinement</h3>
+      </div>
+
+      <div>
+        <span>Participants</span>
+        <h3>4 usability test participants</h3>
+      </div>
+
+      <div>
+        <span>Outcome</span>
+        <h3>Clearer rewards, payments and store discovery</h3>
+      </div>
+    </section>
+
+    <section class="problem-section" id="problem">
+      <div class="section-title">
+        <p class="eyebrow">01 / Problem</p>
+        <h2>Users liked cashback, but the wallet did not explain the value clearly enough.</h2>
+      </div>
+
+      <div class="problem-content">
+        <p>
+          The wallet was meant to help users save through cashback rewards, discover eligible stores, complete payments and track recent activity. The idea was useful, but testing showed that users needed stronger clarity around balance, rewards, payment actions and security before they could fully trust the product.
+        </p>
+
+        <div class="pain-map">
+          <button class="pain-card active" data-pain="cashback">
+            <span>01</span>
+            <h3>Cashback confusion</h3>
+            <p>Users could not quickly separate wallet money from cashback rewards.</p>
+          </button>
+
+          <button class="pain-card" data-pain="paynow">
+            <span>02</span>
+            <h3>Hidden Pay Now</h3>
+            <p>The primary payment action was not placed where users expected it.</p>
+          </button>
+
+          <button class="pain-card" data-pain="map">
+            <span>03</span>
+            <h3>Store discovery gap</h3>
+            <p>Users missed nearby cashback stores because the map did not feel important.</p>
+          </button>
+
+          <button class="pain-card" data-pain="security">
+            <span>04</span>
+            <h3>Bank-linking hesitation</h3>
+            <p>Users wanted more security cues before connecting a bank account.</p>
+          </button>
+        </div>
+
+        <div class="problem-output">
+          <p class="eyebrow">Selected Issue</p>
+          <h3 id="painTitle">Cashback value was visible, but not understandable.</h3>
+          <p id="painText">
+            Users found the balance area, but struggled to understand what money was available, what was cashback and when rewards would actually be applied.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section" id="research">
+      <div class="section-title wide">
+        <p class="eyebrow">02 / Research Approach</p>
+        <h2>I tested the wallet around real money decisions, not just screen impressions.</h2>
+        <p>
+          The study focused on real wallet moments: checking cashback, finding offers, paying, linking accounts and understanding rewards after a transaction.
+        </p>
+      </div>
+
+      <div class="research-pipeline">
+        <article>
+          <span>Method 01</span>
+          <h3>Think-Aloud Testing</h3>
+          <p>
+            Participants moved through the prototype while explaining what felt clear, confusing, risky or useful.
+          </p>
+        </article>
+
+        <article>
+          <span>Method 02</span>
+          <h3>Task Observation</h3>
+          <p>
+            I looked at where users hesitated, what they missed and what actions they expected to be easier.
+          </p>
+        </article>
+
+        <article>
+          <span>Method 03</span>
+          <h3>Severity Mapping</h3>
+          <p>
+            Issues were grouped by impact so the redesign could focus on cashback clarity, Pay Now visibility and store discovery.
+          </p>
+        </article>
+      </div>
+
+      <div class="task-lab">
+        <div class="task-screen">
+          <p class="eyebrow">Interactive Research Lab</p>
+          <h3 id="taskTitle">Check Cashback Balance</h3>
+          <p id="taskText">
+            Users could find the balance, but needed clearer separation between wallet balance, cashback balance and pending rewards.
+          </p>
+
+          <div class="mini-wallet">
+            <div>
+              <span>Wallet</span>
+              <strong>$160.89</strong>
+            </div>
+            <div>
+              <span>Cashback</span>
+              <strong>$18.40</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-buttons">
+          <button class="task-btn active" data-task="balance">Balance</button>
+          <button class="task-btn" data-task="stores">Stores</button>
+          <button class="task-btn" data-task="payment">Payment</button>
+          <button class="task-btn" data-task="bank">Bank Link</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reward-playground">
+      <div class="reward-copy">
+        <p class="eyebrow">03 / Reward Clarity</p>
+        <h2>Users needed the wallet to make rewards feel real, not hidden.</h2>
+        <p>
+          The redesign direction makes cashback visible before payment, confirms it after payment and separates reward money from regular balance so the user does not have to guess.
+        </p>
+
+        <div class="trust-toggle">
+          <button class="trust-btn active" data-trust="before">Before</button>
+          <button class="trust-btn" data-trust="after">After</button>
+        </div>
+
+        <div class="trust-output">
+          <h3 id="trustTitle">Before: cashback felt unclear.</h3>
+          <p id="trustText">Users could see numbers, but they did not always know which amount was spendable, pending or earned as cashback.</p>
+        </div>
+      </div>
+
+      <div class="cashback-calculator">
+        <div class="calculator-top">
+          <span>Cashback Simulator</span>
+          <strong id="cashbackPercent">8%</strong>
+        </div>
+
+        <h3 id="cashbackAmount">$4.00</h3>
+        <p>estimated cashback on a $50 purchase</p>
+
+        <input type="range" min="1" max="15" value="8" id="cashbackSlider">
+
+        <div class="reward-meter">
+          <div id="rewardFill"></div>
+        </div>
+
+        <small>Slide to test how visible reward feedback can make cashback feel more motivating.</small>
+      </div>
+    </section>
+
+    <section class="offer-section">
+      <div class="section-title wide">
+        <p class="eyebrow">04 / Store Discovery</p>
+        <h2>Cashback becomes more useful when users can instantly find where to use it.</h2>
+      </div>
+
+      <div class="offer-grid">
+        <article>
+          <span>Nearby</span>
+          <h3>Coffee shop</h3>
+          <p>8% cashback</p>
+          <b>0.3 mi away</b>
+        </article>
+
+        <article>
+          <span>Popular</span>
+          <h3>Grocery store</h3>
+          <p>5% cashback</p>
+          <b>Open now</b>
+        </article>
+
+        <article>
+          <span>Best value</span>
+          <h3>Food court</h3>
+          <p>12% cashback</p>
+          <b>Limited offer</b>
+        </article>
+
+        <article>
+          <span>Secure pay</span>
+          <h3>Online checkout</h3>
+          <p>3% cashback</p>
+          <b>Instant credit</b>
+        </article>
+      </div>
+    </section>
+
+    <section class="data-section">
+      <div class="data-card big">
+        <p>Usability Signal</p>
+        <h3>The biggest issue was not that users disliked cashback. It was that the product made them work too hard to understand it.</h3>
+      </div>
+
+      <div class="scale-card">
+        <span>Cashback display confusion</span>
+        <div class="scale"><b style="width: 92%"></b></div>
+        <p>High Severity</p>
+      </div>
+
+      <div class="scale-card">
+        <span>Map discoverability</span>
+        <div class="scale"><b style="width: 88%"></b></div>
+        <p>High Severity</p>
+      </div>
+
+      <div class="scale-card">
+        <span>Pay Now visibility</span>
+        <div class="scale"><b style="width: 95%"></b></div>
+        <p>High Severity</p>
+      </div>
+
+      <div class="scale-card">
+        <span>Reward confirmation</span>
+        <div class="scale"><b style="width: 68%"></b></div>
+        <p>Medium Severity</p>
+      </div>
+    </section>
+
+    <section class="findings-section" id="findings">
+      <div class="section-title wide">
+        <p class="eyebrow">05 / Key Findings</p>
+        <h2>Four usability problems shaped the redesign.</h2>
+      </div>
+
+      <div class="findings-grid">
+        <button class="finding-card active" data-finding="display">
+          <span>01</span>
+          <h3>Cashback Display</h3>
+          <p>Users struggled to tell wallet balance and cashback apart.</p>
+        </button>
+
+        <button class="finding-card" data-finding="map">
+          <span>02</span>
+          <h3>Store Map</h3>
+          <p>Users did not notice the map or know it was interactive.</p>
+        </button>
+
+        <button class="finding-card" data-finding="pay">
+          <span>03</span>
+          <h3>Pay Now</h3>
+          <p>The main action was buried away from the homepage.</p>
+        </button>
+
+        <button class="finding-card" data-finding="confirm">
+          <span>04</span>
+          <h3>Reward Feedback</h3>
+          <p>Users were unsure whether cashback was earned after payment.</p>
+        </button>
+      </div>
+
+      <div class="finding-output">
+        <div>
+          <p class="eyebrow">Active Finding</p>
+          <h3 id="findingTitle">Cashback needed clearer visual separation.</h3>
+          <p id="findingText">
+            Users needed a clearer split between wallet balance and cashback balance so they could understand what money they had and what rewards were earned.
+          </p>
+        </div>
+
+        <div class="impact-meter">
+          <span>Severity</span>
+          <div><b id="findingBar"></b></div>
+          <strong id="findingScore">High</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="redesign-section" id="redesign">
+      <div class="section-title wide">
+        <p class="eyebrow">06 / Redesign Decisions</p>
+        <h2>Each redesign moved cashback closer to the user’s decision point.</h2>
+      </div>
+
+      <div class="redesign-grid">
+        <article>
+          <span>Before</span>
+          <h3>Cashback was mixed into one balance area.</h3>
+          <p>Users could not quickly tell what was wallet money, cashback or pending reward value.</p>
+          <b>After → Split wallet balance and cashback into clear cards.</b>
+        </article>
+
+        <article>
+          <span>Before</span>
+          <h3>The store map was hidden.</h3>
+          <p>Users missed nearby cashback opportunities because discovery did not feel like a main feature.</p>
+          <b>After → Add store discovery to navigation with search and filters.</b>
+        </article>
+
+        <article>
+          <span>Before</span>
+          <h3>Pay Now was hard to find.</h3>
+          <p>The payment button was not where users expected it, creating hesitation at checkout.</p>
+          <b>After → Move Pay Now to the homepage as a visible CTA.</b>
+        </article>
+
+        <article>
+          <span>Before</span>
+          <h3>Cashback after payment was unclear.</h3>
+          <p>Users did not know whether they earned cashback after completing a transaction.</p>
+          <b>After → Show cashback credits inside Recent Activity.</b>
+        </article>
+      </div>
+    </section>
+
+    <section class="wallet-journey">
+      <div class="section-title wide">
+        <p class="eyebrow">07 / Wallet Journey</p>
+        <h2>The redesigned experience should feel like a simple money story.</h2>
+      </div>
+
+      <div class="journey-track">
+        <article>
+          <span>01</span>
+          <h3>Find offer</h3>
+          <p>User sees nearby cashback stores clearly.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Pay fast</h3>
+          <p>Pay Now is visible without hunting.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Earn reward</h3>
+          <p>Cashback confirmation appears after payment.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Come back</h3>
+          <p>Reward history motivates repeat use.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="future-section" id="final">
+      <div class="section-title wide">
+        <p class="eyebrow">08 / Future Work</p>
+        <h2>The next step is making cashback feel personalized, secure and habit-forming.</h2>
+      </div>
+
+      <div class="future-grid">
+        <article>
+          <span>01</span>
+          <h3>A/B Testing</h3>
+          <p>Compare the old and redesigned interface using task completion time, error rates and satisfaction.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Personalized Rewards</h3>
+          <p>Suggest deals based on spending patterns, store preference and location.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Security Cues</h3>
+          <p>Add clearer bank-linking reassurance, biometric login and safe verification options.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Rewards Dashboard</h3>
+          <p>Show cashback trends, spending insights and progress toward rewards.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-card">
+        <p class="eyebrow">09 / Final Takeaway</p>
+        <h2>Cashback only feels valuable when users can see it, understand it and trust it.</h2>
+        <p>
+          The redesign focused on making rewards visible at the right moment: before payment, during store discovery and after transactions. The biggest UX lesson was that financial interfaces should not make users guess. They should make money states obvious.
+        </p>
+      </div>
+    </section>
+
+    <footer class="case-footer">
+      <a href="index.html">← Back to Portfolio</a>
+      <a href="#top">Back to Top ↑</a>
+    </footer>
+  </main>
+
+  <script>
+    const progressLine = document.getElementById("progressLine");
+
+    function updateProgressLine() {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = total > 0 ? (window.scrollY / total) * 100 : 0;
+      progressLine.style.width = progress + "%";
+    }
+
+    window.addEventListener("scroll", updateProgressLine);
+    window.addEventListener("load", updateProgressLine);
+    window.addEventListener("resize", updateProgressLine);
+
+    const painData = {
+      cashback: {
+        title: "Cashback value was visible, but not understandable.",
+        text: "Users found the balance area, but struggled to understand what money was available, what was cashback and when rewards would actually be applied."
+      },
+      paynow: {
+        title: "The main payment action was too hidden.",
+        text: "Users expected Pay Now on the homepage. When it was buried deeper in the app, the checkout flow felt slower and less confident."
+      },
+      map: {
+        title: "Cashback stores were not discoverable enough.",
+        text: "Users liked the idea of nearby cashback stores, but the map did not feel like a primary interactive feature."
+      },
+      security: {
+        title: "Bank linking needed stronger trust cues.",
+        text: "Users hesitated before linking a bank account because security details and verification options were not clear enough."
+      }
+    };
+
+    document.querySelectorAll(".pain-card").forEach((card) => {
+      card.addEventListener("click", () => {
+        document.querySelectorAll(".pain-card").forEach((item) => item.classList.remove("active"));
+        card.classList.add("active");
+        const selected = painData[card.dataset.pain];
+        document.getElementById("painTitle").textContent = selected.title;
+        document.getElementById("painText").textContent = selected.text;
+      });
+    });
+
+    const taskData = {
+      balance: {
+        title: "Check Cashback Balance",
+        text: "Users could find the balance, but needed clearer separation between wallet balance, cashback balance and pending rewards."
+      },
+      stores: {
+        title: "Find Cashback Stores",
+        text: "Users wanted stores to be searchable and filterable by cashback percentage, distance and merchant type."
+      },
+      payment: {
+        title: "Complete a Payment",
+        text: "Users searched for Pay Now and expected cashback confirmation after payment."
+      },
+      bank: {
+        title: "Link a Bank Account",
+        text: "Users wanted security reassurance and alternate verification methods before linking bank accounts."
+      }
+    };
+
+    document.querySelectorAll(".task-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".task-btn").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        const selected = taskData[button.dataset.task];
+        document.getElementById("taskTitle").textContent = selected.title;
+        document.getElementById("taskText").textContent = selected.text;
+      });
+    });
+
+    const trustData = {
+      before: {
+        title: "Before: cashback felt unclear.",
+        text: "Users could see numbers, but they did not always know which amount was spendable, pending or earned as cashback."
+      },
+      after: {
+        title: "After: cashback feels explainable.",
+        text: "The redesigned direction separates wallet balance, cashback balance and reward confirmation so users understand what happened."
+      }
+    };
+
+    document.querySelectorAll(".trust-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".trust-btn").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        const selected = trustData[button.dataset.trust];
+        document.getElementById("trustTitle").textContent = selected.title;
+        document.getElementById("trustText").textContent = selected.text;
+      });
+    });
+
+    const findingData = {
+      display: {
+        title: "Cashback needed clearer visual separation.",
+        text: "Users needed a clearer split between wallet balance and cashback balance so they could understand what money they had and what rewards were earned.",
+        score: "High",
+        width: "92%"
+      },
+      map: {
+        title: "Store discovery needed to feel like a main feature.",
+        text: "Users overlooked the map, so the redesign made store discovery more visible through navigation, search and filter options.",
+        score: "High",
+        width: "88%"
+      },
+      pay: {
+        title: "Pay Now needed to be available immediately.",
+        text: "Users expected the primary payment action on the homepage, so the redesign made Pay Now a persistent, visible CTA.",
+        score: "High",
+        width: "95%"
+      },
+      confirm: {
+        title: "Cashback feedback needed to happen after payment.",
+        text: "Users were unsure whether they earned cashback, so the redesign added cashback updates inside Recent Activity.",
+        score: "Medium",
+        width: "68%"
+      }
+    };
+
+    document.querySelectorAll(".finding-card").forEach((card) => {
+      card.addEventListener("click", () => {
+        document.querySelectorAll(".finding-card").forEach((item) => item.classList.remove("active"));
+        card.classList.add("active");
+        const selected = findingData[card.dataset.finding];
+        document.getElementById("findingTitle").textContent = selected.title;
+        document.getElementById("findingText").textContent = selected.text;
+        document.getElementById("findingScore").textContent = selected.score;
+        document.getElementById("findingBar").style.width = selected.width;
+      });
+    });
+
+    const cashbackSlider = document.getElementById("cashbackSlider");
+    const cashbackPercent = document.getElementById("cashbackPercent");
+    const cashbackAmount = document.getElementById("cashbackAmount");
+    const rewardFill = document.getElementById("rewardFill");
+
+    function updateCashback() {
+      const percent = Number(cashbackSlider.value);
+      const amount = (50 * percent / 100).toFixed(2);
+      cashbackPercent.textContent = percent + "%";
+      cashbackAmount.textContent = "$" + amount;
+      rewardFill.style.width = (percent / 15 * 100) + "%";
+    }
+
+    cashbackSlider.addEventListener("input", updateCashback);
+    updateCashback();
+  </script>
+</body>
+</html>

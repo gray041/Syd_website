@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cartlyst Case Study | Siddhi</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="cartlyst.css" />
+</head>
+
+<body>
+  <div class="progress-line" id="progressLine"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <main class="case-shell">
+
+    <header class="case-nav">
+      <a href="index.html" class="brand">S/</a>
+
+      <nav>
+        <a href="index.html#work">Back</a>
+        <a href="#problem">Problem</a>
+        <a href="#research">Research</a>
+        <a href="#playground">Demo</a>
+        <a href="#final">Final</a>
+      </nav>
+
+      <button class="nav-button prototype-trigger" type="button">
+        Prototype <span>↗</span>
+      </button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <p class="eyebrow">HCI 594 Capstone Studio</p>
+
+        <h1>Cartlyst</h1>
+
+        <h2>
+          A smart cart tablet experience for transparent, safe and stress-free grocery shopping.
+        </h2>
+
+        <p>
+          Cartlyst is an IoT-based smart grocery cart tablet interface designed to help shoppers scan items,
+          track live spending, check allergens, manage budgets and complete self-checkout without the usual
+          confusion and sticker shock at the register.
+        </p>
+
+        <div class="hero-pills">
+          <span>UX Research</span>
+          <span>Smart Cart</span>
+          <span>IoT Interface</span>
+          <span>Grocery Tech</span>
+          <span>Figma Prototype</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="floating-note">
+          Grocery shopping needs the right data at the right moment.
+        </div>
+
+        <div class="hero-mockup">
+          <img src="cartlyst.png" alt="Cartlyst project mockup">
+        </div>
+
+        <p class="scribble">smart cart,<br>less stress.</p>
+      </div>
+    </section>
+
+    <section class="project-snapshot">
+      <div>
+        <span>Role</span>
+        <h3>UX/UI Designer + Researcher</h3>
+      </div>
+
+      <div>
+        <span>Methods</span>
+        <h3>Survey, Interviews, Testing</h3>
+      </div>
+
+      <div>
+        <span>Participants</span>
+        <h3>83 survey responses</h3>
+      </div>
+
+      <div>
+        <span>Goal</span>
+        <h3>Reduce checkout shock and label confusion</h3>
+      </div>
+    </section>
+
+    <section class="problem-section" id="problem">
+      <div class="section-title">
+        <p class="eyebrow">01 / Problem</p>
+        <h2>Grocery shoppers struggle with budget uncertainty, label fatigue and checkout stress.</h2>
+      </div>
+
+      <div class="problem-content">
+        <p>
+          During grocery shopping, users often estimate totals mentally, scan confusing product labels,
+          worry about allergens, and only discover the real cost at checkout. This creates stress,
+          especially for users shopping with strict budgets, dietary needs or time pressure.
+        </p>
+
+        <div class="problem-box">
+          <h3>Search Fatigue</h3>
+          <p>52% could not confirm product safety from the label alone.</p>
+        </div>
+
+        <div class="problem-box green">
+          <h3>Sticker Shock</h3>
+          <p>67% of shoppers reported surprise at checkout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution-section">
+      <div class="solution-big">
+        <p class="eyebrow">02 / Solution</p>
+        <h2>
+          Cartlyst turns the grocery cart into a real-time shopping assistant.
+        </h2>
+      </div>
+
+      <div class="solution-cards">
+        <article>
+          <span>01</span>
+          <h3>Live Cart Total</h3>
+          <p>Users can see a running total with tax and price changes while shopping.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Allergen Alerts</h3>
+          <p>Saved dietary profiles trigger warnings when scanned items contain risky ingredients.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Self Checkout</h3>
+          <p>Users can pay directly through the tablet and skip traditional checkout lines.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="research-section" id="research">
+      <div class="section-title wide">
+        <p class="eyebrow">03 / Research</p>
+        <h2>Research showed that shoppers do not need more data. They need useful data at the right time.</h2>
+        <p>
+          We used contextual surveys, user interviews, personas, journey mapping and usability testing to understand
+          grocery shopping friction.
+        </p>
+      </div>
+
+      <div class="animated-stats">
+        <div class="stat-card">
+          <h3 data-count="83">0</h3>
+          <p>survey participants helped validate grocery shopping pain points</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 data-count="86">0%</h3>
+          <p>found labels exhausting while shopping</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 data-count="76">0%</h3>
+          <p>reported rebuying items by mistake</p>
+        </div>
+      </div>
+
+      <div class="research-lab">
+        <div class="chart-card">
+          <div class="chart-heading">
+            <h3>Budget Pain</h3>
+            <span>Survey</span>
+          </div>
+
+          <div class="pie-chart" data-percent="67">
+            <div>
+              <strong>67%</strong>
+              <small>Sticker shock</small>
+            </div>
+          </div>
+
+          <p>
+            Users were surprised by totals at checkout because they had no reliable running total during the trip.
+          </p>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-heading">
+            <h3>Shopping Frictions</h3>
+            <span>Findings</span>
+          </div>
+
+          <div class="bar-item">
+            <p>Labels feel exhausting <b>86%</b></p>
+            <div><span style="--w: 86%"></span></div>
+          </div>
+
+          <div class="bar-item">
+            <p>Overbuy when hungry <b>66%</b></p>
+            <div><span style="--w: 66%"></span></div>
+          </div>
+
+          <div class="bar-item">
+            <p>Rebuy by mistake <b>76%</b></p>
+            <div><span style="--w: 76%"></span></div>
+          </div>
+
+          <div class="bar-item">
+            <p>Wanted live total <b>75%</b></p>
+            <div><span style="--w: 75%"></span></div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-heading">
+            <h3>Interface Direction</h3>
+            <span>Device</span>
+          </div>
+
+          <div class="donut-chart">
+            <div>
+              <strong>Tablet</strong>
+              <small>Mounted cart UI</small>
+            </div>
+          </div>
+
+          <p>
+            Users preferred a mounted tablet because it acts like a control center without forcing them to use their phone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="playground-section" id="playground">
+      <div class="section-title wide">
+        <p class="eyebrow">04 / Interactive Cart Playground</p>
+        <h2>Try the shopping logic behind Cartlyst.</h2>
+        <p>
+          Click grocery items, adjust the budget, and watch Cartlyst react with live totals, alerts and checkout feedback.
+        </p>
+      </div>
+
+      <div class="playground-grid">
+
+        <div class="store-shelf">
+          <div class="shelf-top">
+            <span>Tap items to add</span>
+            <b>Smart Shelf</b>
+          </div>
+
+          <div class="grocery-grid">
+            <button class="grocery-item" data-name="Greek Yogurt" data-price="6.49" data-meta="Contains dairy" data-allergy="Contains Dairy">
+              <span>🥛</span>
+              <b>Greek Yogurt</b>
+              <small>$6.49</small>
+            </button>
+
+            <button class="grocery-item" data-name="Peanut Granola" data-price="7.25" data-meta="Contains peanuts" data-allergy="Contains Peanuts">
+              <span>🥜</span>
+              <b>Peanut Granola</b>
+              <small>$7.25</small>
+            </button>
+
+            <button class="grocery-item" data-name="Bell Pepper" data-price="2.25" data-meta="Fresh produce" data-allergy="Safe Item">
+              <span>🫑</span>
+              <b>Bell Pepper</b>
+              <small>$2.25</small>
+            </button>
+
+            <button class="grocery-item" data-name="Organic Broccoli" data-price="3.15" data-meta="Fresh produce" data-allergy="Safe Item">
+              <span>🥦</span>
+              <b>Broccoli</b>
+              <small>$3.15</small>
+            </button>
+
+            <button class="grocery-item" data-name="Family Snack Pack" data-price="12.99" data-meta="Budget-heavy item" data-allergy="No saved allergen">
+              <span>🍿</span>
+              <b>Snack Pack</b>
+              <small>$12.99</small>
+            </button>
+
+            <button class="grocery-item" data-name="Almond Milk" data-price="5.80" data-meta="Contains tree nuts" data-allergy="Contains Tree Nuts">
+              <span>🥤</span>
+              <b>Almond Milk</b>
+              <small>$5.80</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="tablet-simulator">
+          <div class="tablet-camera"></div>
+
+          <div class="tablet-topbar">
+            <span>9:41</span>
+            <b>Cartlyst</b>
+            <span>●●●</span>
+          </div>
+
+          <div class="scanner-frame">
+            <div class="scan-line"></div>
+            <div class="barcode-card">
+              <p>Last scanned</p>
+              <h3 id="scannedItem">Start Shopping</h3>
+              <small id="scannedMeta">Tap an item from the shelf</small>
+            </div>
+          </div>
+
+          <div class="tablet-alert" id="tabletAlert">
+            <span id="allergyText">No alert yet</span>
+          </div>
+
+          <div class="tablet-total">
+            <p>Live total</p>
+            <h3>$<span id="liveTotal">0.00</span></h3>
+          </div>
+
+          <div class="budget-control">
+            <div class="budget-label">
+              <span>Budget</span>
+              <b>$<span id="budgetValue">35</span></b>
+            </div>
+
+            <input id="budgetSlider" type="range" min="10" max="80" value="35">
+          </div>
+
+          <div class="budget-bar">
+            <span id="budgetFill"></span>
+          </div>
+
+          <div class="tablet-status" id="budgetText">
+            Add items to begin.
+          </div>
+
+          <button class="checkout-button" id="checkoutButton" type="button">
+            Pay with Cartlyst
+          </button>
+        </div>
+
+        <div class="receipt-panel">
+          <div class="receipt-top">
+            <span>Live Receipt</span>
+            <button id="clearCart" type="button">Clear</button>
+          </div>
+
+          <div class="mini-receipt" id="miniReceipt">
+            <p class="empty-receipt">No items yet. Start scanning.</p>
+          </div>
+
+          <div class="checkout-result" id="checkoutResult">
+            Checkout status will appear here.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="chaos-section">
+      <div class="section-title wide">
+        <p class="eyebrow">05 / Stress Test</p>
+        <h2>Cartlyst is designed for messy real-life grocery moments.</h2>
+      </div>
+
+      <div class="chaos-grid">
+        <article class="chaos-card">
+          <span>Budget Panic</span>
+          <h3>“Wait, how is it already $70?”</h3>
+          <p>Live totals turn surprise into control before checkout.</p>
+        </article>
+
+        <article class="chaos-card green">
+          <span>Label Fatigue</span>
+          <h3>“I cannot read this tiny ingredient list.”</h3>
+          <p>Ingredient and allergen details appear in a clean readable card.</p>
+        </article>
+
+        <article class="chaos-card dark">
+          <span>Checkout Line</span>
+          <h3>“I just want to leave.”</h3>
+          <p>Self-checkout helps users finish the trip from the cart.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="insights-wall">
+      <div class="section-title">
+        <p class="eyebrow">06 / Key Insights</p>
+        <h2>What the research made clear</h2>
+      </div>
+
+      <div class="sticky-board">
+        <div class="sticky-card">Users mentally estimate costs, but those estimates are usually wrong.</div>
+        <div class="sticky-card green">Tiny product labels make allergen and ingredient checking stressful.</div>
+        <div class="sticky-card">Every extra tap becomes a barrier for older or low-tech users.</div>
+        <div class="sticky-card">Budget alerts need to happen before checkout, not after the damage is done.</div>
+      </div>
+    </section>
+
+    <section class="persona-section">
+      <div>
+        <p class="eyebrow">07 / Persona 01</p>
+        <h2>Sam: low-tech shopper with strict dietary needs.</h2>
+        <p>
+          Sam is 72 and sees the tablet as a live checklist, not a computer. He wants to follow doctor-recommended
+          dietary rules, avoid physical and mental strain, and shop without reading small labels.
+        </p>
+      </div>
+
+      <div class="image-drop">
+        <img src="Cartlyst/sampersona.png" alt="Cartlyst persona Sam">
+      </div>
+    </section>
+
+    <section class="persona-section reverse">
+      <div>
+        <p class="eyebrow">08 / Persona 02</p>
+        <h2>Sarah: busy parent trying to control time and budget.</h2>
+        <p>
+          Sarah is a tech-savvy stay-at-home mom of three. She sees Cartlyst as a control center that helps her
+          move fast, find deals, stay on budget and avoid long checkout lines.
+        </p>
+      </div>
+
+      <div class="image-drop">
+        <img src="Cartlyst/sarahpersona.png" alt="Cartlyst persona Sarah">
+      </div>
+    </section>
+
+    <section class="journey-section">
+      <div class="section-title wide">
+        <p class="eyebrow">09 / Customer Journey</p>
+        <h2>Mapping the stressful grocery journey helped us identify where Cartlyst should step in.</h2>
+        <p>
+          The highest-friction moments were checking labels, tracking spending and checkout. Cartlyst responds with
+          allergen flags, live total alerts and self-checkout.
+        </p>
+      </div>
+
+      <div class="wide-image-card">
+        <img src="Cartlyst/customerjourneymapcartlyst.png" alt="Cartlyst customer journey map">
+      </div>
+    </section>
+
+    <section class="cartlyst-system-section">
+      <div class="section-title wide">
+        <p class="eyebrow">10 / System Thinking</p>
+        <h2>Cartlyst connects the cart, products, budget and checkout into one flow.</h2>
+      </div>
+
+      <div class="system-map">
+        <div class="system-node active">
+          <span>01</span>
+          <h3>Scan</h3>
+          <p>User scans or browses items from the cart tablet.</p>
+        </div>
+
+        <div class="system-connector"></div>
+
+        <div class="system-node">
+          <span>02</span>
+          <h3>Check</h3>
+          <p>Cartlyst checks allergens, ingredients and saved preferences.</p>
+        </div>
+
+        <div class="system-connector"></div>
+
+        <div class="system-node">
+          <span>03</span>
+          <h3>Track</h3>
+          <p>The live total updates with every item added.</p>
+        </div>
+
+        <div class="system-connector"></div>
+
+        <div class="system-node">
+          <span>04</span>
+          <h3>Pay</h3>
+          <p>User checks out directly from the cart tablet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="aisle-map-section">
+      <div class="section-title wide">
+        <p class="eyebrow">11 / Store Navigation</p>
+        <h2>A smart cart should also reduce “where is this item?” frustration.</h2>
+        <p>Hover over the aisles to see how Cartlyst can guide shoppers inside the store.</p>
+      </div>
+
+      <div class="aisle-map">
+        <div class="aisle active" data-label="Fresh produce and vegetables">Produce</div>
+        <div class="aisle" data-label="Milk, yogurt, cheese and dairy alternatives">Dairy</div>
+        <div class="aisle" data-label="Snacks, chips and family packs">Snacks</div>
+        <div class="aisle" data-label="Frozen meals and quick dinners">Frozen</div>
+        <div class="aisle" data-label="Self-checkout and exit kiosk">Checkout</div>
+      </div>
+
+      <div class="aisle-caption" id="aisleCaption">
+        Fresh produce and vegetables
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="section-title wide">
+        <p class="eyebrow">12 / Project Pipeline</p>
+        <h2>From research to high-fidelity prototype</h2>
+      </div>
+
+      <div class="process-track">
+        <div>
+          <span>01</span>
+          <h3>Research</h3>
+          <p>Survey, interviews, class activity and literature review.</p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <h3>Ideation</h3>
+          <p>Storyboard, personas, journey map and smart cart feature planning.</p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <h3>Lo-fi</h3>
+          <p>Paper wireframes and low-fidelity tablet screens.</p>
+        </div>
+
+        <div>
+          <span>04</span>
+          <h3>Testing</h3>
+          <p>Tested budget setup, cart flow, allergen alerts and checkout.</p>
+        </div>
+
+        <div>
+          <span>05</span>
+          <h3>Hi-fi</h3>
+          <p>Final UI screens with onboarding, scanning, live total and payment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="screens-section">
+      <div class="section-title wide">
+        <p class="eyebrow">13 / Wireframes</p>
+        <h2>Building the grocery flow before polishing the interface.</h2>
+        <p>Click any wireframe to view it larger.</p>
+      </div>
+
+      <div class="screen-grid">
+        <button
+          type="button"
+          class="screen-card wireframe-open"
+          data-img="Cartlyst/wireframe1 .png"
+          data-title="Cartlyst Wireframe 1"
+        >
+          <img src="Cartlyst/wireframe1 .png" alt="Cartlyst wireframe 1">
+          <span>Click to expand ↗</span>
+        </button>
+
+        <button
+          type="button"
+          class="screen-card wireframe-open"
+          data-img="Cartlyst/wireframe2.png"
+          data-title="Cartlyst Wireframe 2"
+        >
+          <img src="Cartlyst/wireframe2.png" alt="Cartlyst wireframe 2">
+          <span>Click to expand ↗</span>
+        </button>
+
+        <button
+          type="button"
+          class="screen-card wireframe-open"
+          data-img="Cartlyst/wireframe3.png"
+          data-title="Cartlyst Wireframe 3"
+        >
+          <img src="Cartlyst/wireframe3.png" alt="Cartlyst wireframe 3">
+          <span>Click to expand ↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="section-title wide">
+        <p class="eyebrow">14 / Final Features</p>
+        <h2>Cartlyst turns shopping pain points into direct product features.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article>
+          <span>01</span>
+          <h3>Simple Onboarding</h3>
+          <p>Quick setup for dietary preferences and budget in under two minutes.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Live Cart Total</h3>
+          <p>Real-time running total including tax and weight-based pricing.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Item Description</h3>
+          <p>Scanned products show ingredients, warnings and product details clearly.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Store Navigation</h3>
+          <p>Guided path to reduce search fatigue and cognitive load.</p>
+        </article>
+
+        <article>
+          <span>05</span>
+          <h3>Budget Alerts</h3>
+          <p>Proactive alerts when users are approaching or crossing their set limit.</p>
+        </article>
+
+        <article>
+          <span>06</span>
+          <h3>Self Checkout</h3>
+          <p>Secure payment directly through the tablet to reduce checkout wait time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-showcase-section">
+      <div class="section-title wide">
+        <p class="eyebrow">15 / Feature Moments</p>
+        <h2>The small interactions that make Cartlyst useful in-store.</h2>
+      </div>
+
+      <div class="feature-showcase-grid">
+        <article class="feature-moment">
+          <div class="feature-icon">⟲</div>
+          <h3>Past Picks</h3>
+          <p>Helps users avoid rebuying the same products by mistake.</p>
+        </article>
+
+        <article class="feature-moment green">
+          <div class="feature-icon">!</div>
+          <h3>Safety Flags</h3>
+          <p>Ingredient and allergen alerts appear before the item reaches checkout.</p>
+        </article>
+
+        <article class="feature-moment dark">
+          <div class="feature-icon">$</div>
+          <h3>Budget Guard</h3>
+          <p>Shows when users are approaching or crossing their set budget.</p>
+        </article>
+
+        <article class="feature-moment">
+          <div class="feature-icon">↗</div>
+          <h3>Exit Kiosk Check</h3>
+          <p>Helps catch unpaid items before users leave the store.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-section" id="final">
+      <div class="section-title wide">
+        <p class="eyebrow">16 / Final Design</p>
+        <h2>A smart grocery tablet interface designed for clarity, safety and control.</h2>
+        <p>
+          The final UI focuses on clean navigation, visible totals, high-contrast warnings and simple checkout.
+        </p>
+      </div>
+
+      <div class="final-single-image">
+        <img src="Cartlyst/finalimage.png" alt="Cartlyst final design">
+      </div>
+    </section>
+
+    <section class="video-section" id="video-demo">
+      <div class="section-title wide">
+        <p class="eyebrow">17 / Product Walkthrough</p>
+        <h2>See how Cartlyst works in the shopping flow.</h2>
+        <p>
+          This video shows how users can scan items, track their budget, get alerts, and move through checkout.
+        </p>
+      </div>
+
+      <div class="video-demo-card">
+        <video controls poster="Cartlyst/cartlyst-video-cover.png">
+          <source src="Cartlyst/Cartlyst intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="prototype-section" id="prototype">
+      <div class="prototype-content">
+        <p class="eyebrow">18 / Prototype</p>
+        <h2>Interactive Figma prototype</h2>
+        <p>
+          Explore the Cartlyst smart cart tablet flow, including onboarding, scanning, budget tracking,
+          allergen alerts and checkout.
+        </p>
+      </div>
+
+      <div class="prototype-embed-card">
+        <iframe
+          src="https://embed.figma.com/proto/OOSgL78uMn3X8VTbLx7QzK/Cartlyst-Design-system?page-id=271%3A419&node-id=271-425&viewport=2385%2C1369%2C0.46&scaling=scale-down&content-scaling=fixed&starting-point-node-id=271%3A421&embed-host=share"
+          title="Cartlyst Figma prototype"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="reflection-section">
+      <div>
+        <p class="eyebrow">19 / Reflection</p>
+        <h2>What this project taught me</h2>
+      </div>
+
+      <p>
+        This project taught me that strong UX is not just about showing more information. It is about showing the
+        right information at the right time. Cartlyst became stronger because every feature was connected back to
+        a user pain point: budget stress, label confusion, accessibility needs and checkout friction.
+      </p>
+    </section>
+
+    <footer class="case-footer">
+      <a href="index.html">← Back to Portfolio</a>
+      <a href="photography-elearning.html">Next Project →</a>
+    </footer>
+
+  </main>
+
+  <div class="wireframe-lightbox" id="wireframeLightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-top">
+        <p id="lightboxTitle">Preview</p>
+        <span>Press Esc to close</span>
+      </div>
+
+      <img id="lightboxImage" src="" alt="Expanded preview">
+    </div>
+  </div>
+
+  <div class="prototype-popup" id="prototypePopup">
+    <button class="prototype-popup-close" id="prototypePopupClose" aria-label="Close prototype popup">×</button>
+
+    <div class="prototype-popup-content">
+      <div class="prototype-popup-top">
+        <p>Cartlyst Prototype</p>
+        <span>Press Esc to close</span>
+      </div>
+
+      <iframe
+        src="https://embed.figma.com/proto/OOSgL78uMn3X8VTbLx7QzK/Cartlyst-Design-system?page-id=271%3A419&node-id=271-425&viewport=2385%2C1369%2C0.46&scaling=scale-down&content-scaling=fixed&starting-point-node-id=271%3A421&embed-host=share"
+        title="Cartlyst Figma prototype popup"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    const progressLine = document.getElementById("progressLine");
+    const cursorDot = document.getElementById("cursorDot");
+
+    function updateProgressLine() {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = total > 0 ? (window.scrollY / total) * 100 : 0;
+      progressLine.style.width = progress + "%";
+    }
+
+    window.addEventListener("scroll", updateProgressLine);
+    window.addEventListener("load", updateProgressLine);
+    window.addEventListener("resize", updateProgressLine);
+
+    window.addEventListener("mousemove", (e) => {
+      cursorDot.style.left = e.clientX + "px";
+      cursorDot.style.top = e.clientY + "px";
+    });
+
+    const statNumbers = document.querySelectorAll(".stat-card h3");
+    const barCards = document.querySelectorAll(".chart-card");
+    let played = false;
+
+    function animateResearch() {
+      if (played) return;
+
+      const research = document.querySelector(".research-section");
+      if (!research) return;
+
+      const top = research.getBoundingClientRect().top;
+
+      if (top < window.innerHeight * 0.65) {
+        played = true;
+
+        statNumbers.forEach((num) => {
+          const target = Number(num.dataset.count);
+          const isPercent = num.textContent.includes("%");
+          let current = 0;
+
+          const timer = setInterval(() => {
+            current += Math.ceil(target / 35);
+
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+
+            num.textContent = isPercent ? current + "%" : current;
+          }, 30);
+        });
+
+        barCards.forEach((card) => card.classList.add("animate-bars"));
+      }
+    }
+
+    window.addEventListener("scroll", animateResearch);
+    window.addEventListener("load", animateResearch);
+
+    document.querySelectorAll(".pie-chart").forEach((pie) => {
+      const percent = pie.dataset.percent;
+      pie.style.setProperty("--percent", percent);
+    });
+
+    const previewButtons = document.querySelectorAll(".wireframe-open");
+    const lightbox = document.getElementById("wireframeLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxTitle = document.getElementById("lightboxTitle");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    previewButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const imagePath = button.getAttribute("data-img");
+        const imageTitle = button.getAttribute("data-title");
+
+        lightboxImage.src = imagePath;
+        lightboxTitle.textContent = imageTitle;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      lightboxImage.src = "";
+      document.body.style.overflow = "";
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    const prototypeTriggers = document.querySelectorAll(".prototype-trigger");
+    const prototypePopup = document.getElementById("prototypePopup");
+    const prototypePopupClose = document.getElementById("prototypePopupClose");
+
+    prototypeTriggers.forEach((button) => {
+      button.addEventListener("click", () => {
+        prototypePopup.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closePrototypePopup() {
+      prototypePopup.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    prototypePopupClose.addEventListener("click", closePrototypePopup);
+
+    prototypePopup.addEventListener("click", (event) => {
+      if (event.target === prototypePopup) closePrototypePopup();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox.classList.contains("active")) closeLightbox();
+      if (event.key === "Escape" && prototypePopup.classList.contains("active")) closePrototypePopup();
+    });
+
+    const groceryItems = document.querySelectorAll(".grocery-item");
+    const scannedItem = document.getElementById("scannedItem");
+    const scannedMeta = document.getElementById("scannedMeta");
+    const liveTotal = document.getElementById("liveTotal");
+    const budgetFill = document.getElementById("budgetFill");
+    const allergyText = document.getElementById("allergyText");
+    const budgetText = document.getElementById("budgetText");
+    const miniReceipt = document.getElementById("miniReceipt");
+    const clearCart = document.getElementById("clearCart");
+    const checkoutButton = document.getElementById("checkoutButton");
+    const checkoutResult = document.getElementById("checkoutResult");
+    const budgetSlider = document.getElementById("budgetSlider");
+    const budgetValue = document.getElementById("budgetValue");
+    const tabletAlert = document.getElementById("tabletAlert");
+
+    let cartTotal = 0;
+    let cartItems = [];
+    let budgetLimit = 35;
+
+    function updateCartUI() {
+      if (!liveTotal) return;
+
+      liveTotal.textContent = cartTotal.toFixed(2);
+      budgetValue.textContent = budgetLimit;
+
+      const percent = Math.min((cartTotal / budgetLimit) * 100, 100);
+      budgetFill.style.width = percent + "%";
+
+      if (cartTotal === 0) {
+        budgetText.textContent = "Add items to begin.";
+        tabletAlert.className = "tablet-alert";
+      } else if (cartTotal >= budgetLimit) {
+        budgetText.textContent = "Budget crossed. Review your cart.";
+        tabletAlert.className = "tablet-alert danger";
+      } else if (cartTotal >= budgetLimit * 0.78) {
+        budgetText.textContent = "Approaching budget limit.";
+        tabletAlert.className = "tablet-alert warning";
+      } else {
+        budgetText.textContent = "You are still on track.";
+      }
+
+      if (cartItems.length === 0) {
+        miniReceipt.innerHTML = `<p class="empty-receipt">No items yet. Start scanning.</p>`;
+        return;
+      }
+
+      miniReceipt.innerHTML = cartItems.map((item, index) => {
+        return `
+          <div class="receipt-row">
+            <span>${item.name}</span>
+            <b>$${item.price.toFixed(2)}</b>
+            <button type="button" class="remove-item" data-index="${index}">×</button>
+          </div>
+        `;
+      }).join("");
+
+      document.querySelectorAll(".remove-item").forEach((button) => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.index);
+          cartTotal -= cartItems[index].price;
+          cartItems.splice(index, 1);
+          updateCartUI();
+        });
+      });
+    }
+
+    groceryItems.forEach((button) => {
+      button.addEventListener("click", () => {
+        const item = {
+          name: button.dataset.name,
+          price: Number(button.dataset.price),
+          meta: button.dataset.meta,
+          allergy: button.dataset.allergy
+        };
+
+        cartItems.push(item);
+        cartTotal += item.price;
+
+        scannedItem.textContent = item.name;
+        scannedMeta.textContent = item.meta;
+        allergyText.textContent = item.allergy;
+
+        if (item.allergy.includes("Contains")) {
+          tabletAlert.className = "tablet-alert danger";
+        } else {
+          tabletAlert.className = "tablet-alert safe";
+        }
+
+        button.classList.add("popped");
+
+        setTimeout(() => {
+          button.classList.remove("popped");
+        }, 380);
+
+        checkoutResult.textContent = "Item added. Keep shopping or checkout.";
+        updateCartUI();
+      });
+    });
+
+    budgetSlider.addEventListener("input", () => {
+      budgetLimit = Number(budgetSlider.value);
+      updateCartUI();
+    });
+
+    clearCart.addEventListener("click", () => {
+      cartTotal = 0;
+      cartItems = [];
+      scannedItem.textContent = "Start Shopping";
+      scannedMeta.textContent = "Tap an item from the shelf";
+      allergyText.textContent = "No alert yet";
+      checkoutResult.textContent = "Cart cleared.";
+      updateCartUI();
+    });
+
+    checkoutButton.addEventListener("click", () => {
+      if (cartItems.length === 0) {
+        checkoutResult.textContent = "Add at least one item before checkout.";
+        return;
+      }
+
+      if (cartTotal > budgetLimit) {
+        checkoutResult.textContent = "Checkout blocked: over budget. Remove item or increase budget.";
+        document.body.classList.add("shake-page");
+
+        setTimeout(() => {
+          document.body.classList.remove("shake-page");
+        }, 500);
+
+        return;
+      }
+
+      checkoutResult.textContent = "Payment successful. Receipt sent. You can exit.";
+      createConfetti();
+    });
+
+    function createConfetti() {
+      for (let i = 0; i < 34; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti-piece";
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.animationDelay = Math.random() * 0.35 + "s";
+        piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+        document.body.appendChild(piece);
+
+        setTimeout(() => {
+          piece.remove();
+        }, 1600);
+      }
+    }
+
+    const aisles = document.querySelectorAll(".aisle");
+    const aisleCaption = document.getElementById("aisleCaption");
+
+    aisles.forEach((aisle) => {
+      aisle.addEventListener("mouseenter", () => {
+        aisles.forEach((item) => item.classList.remove("active"));
+        aisle.classList.add("active");
+        aisleCaption.textContent = aisle.dataset.label;
+      });
+
+      aisle.addEventListener("click", () => {
+        aisles.forEach((item) => item.classList.remove("active"));
+        aisle.classList.add("active");
+        aisleCaption.textContent = aisle.dataset.label;
+      });
+    });
+
+    updateCartUI();
+  </script>
+</body>
+</html>

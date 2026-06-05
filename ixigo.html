@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ixigo Case Study | Siddhi</title>
+  <link rel="stylesheet" href="ixigo.css" />
+</head>
+
+<body>
+  <div class="progress-line" id="progressLine"></div>
+
+  <main class="case-shell" id="top">
+
+    <header class="case-nav">
+      <a href="index.html" class="brand">S/</a>
+
+      <nav>
+        <a href="index.html#work">Back</a>
+        <a href="#problem">Problem</a>
+        <a href="#travel-lab">Travel Lab</a>
+        <a href="#iterations">Iterations</a>
+        <a href="#final">Final</a>
+      </nav>
+
+      <button class="nav-button prototype-trigger" type="button">
+        Prototype <span>↗</span>
+      </button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <p class="hero-course">Mobile App UX Case Study</p>
+
+        <h1>IXIGO</h1>
+
+        <h2>
+          A smarter ticket booking flow for users who want clarity before they pay.
+        </h2>
+
+        <p>
+          I redesigned an iOS travel booking experience for Ixigo as an academic UX project. The app brings train, flight,
+          bus, Tatkal status, seat selection and payment into one cleaner flow so users do not have to jump between multiple
+          websites and apps.
+        </p>
+
+        <div class="hero-pills">
+          <span>UX Research</span>
+          <span>Mobile UI</span>
+          <span>Travel Tech</span>
+          <span>Seat Selection</span>
+          <span>Prototype</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-note">
+          Booking should not feel like a gamble.
+          <br>
+          Ixigo helps users choose, check and confirm faster.
+        </div>
+
+        <button class="hero-image-frame open-screen" data-img="ixigo.png" data-title="Ixigo Travel App Redesign">
+          <img src="ixigo.png" alt="Ixigo travel app redesign mockup">
+        </button>
+
+        <p class="hero-handnote">
+          BOOK SMARTER,<br>
+          TRAVEL CALMER.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-snapshot">
+      <div>
+        <span>Project</span>
+        <h3>Ixigo Mobile App</h3>
+      </div>
+
+      <div>
+        <span>Role</span>
+        <h3>UI/UX Designer</h3>
+      </div>
+
+      <div>
+        <span>Timeline</span>
+        <h3>2 months</h3>
+      </div>
+
+      <div>
+        <span>Result</span>
+        <h3>80% satisfaction after testing</h3>
+      </div>
+    </section>
+
+    <section class="problem-section" id="problem">
+      <div class="section-title">
+        <p class="eyebrow">01 / Problem</p>
+        <h2>Booking tickets online becomes stressful when users cannot trust what will happen next.</h2>
+      </div>
+
+      <div class="problem-content">
+        <p>
+          Users often check one platform for train availability, another for confirmation chances, another for seat choice,
+          and then get redirected for payment. This creates confusion and makes the booking process feel risky, especially
+          during Tatkal or urgent travel bookings.
+        </p>
+
+        <div class="ticket-problem">
+          <div class="ticket-stub">
+            <span>UX ISSUE</span>
+            <h3>Unclear booking confidence</h3>
+          </div>
+
+          <div class="ticket-body">
+            <p>Users asked: “Will my seat confirm?”, “Can I choose my seat?”, “Is payment safe?”, and “Why do I need another app?”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="travel-lab-section" id="travel-lab">
+      <div class="section-title wide">
+        <p class="eyebrow">02 / Booking Confidence Lab</p>
+        <h2>Search, compare, choose and pay with confidence.</h2>
+        <p>
+          The travel lab shows how Ixigo reduces stress at the most important booking moments: route selection,
+          fare clarity, confirmation confidence, seat control and checkout.
+        </p>
+      </div>
+
+      <div class="travel-lab">
+        <div class="route-panel">
+          <p class="panel-label">Select travel mode</p>
+
+          <button class="route-card active" data-route="tatkal">
+            <span>Train</span>
+            <h3>TNA → CCH</h3>
+            <p>Tatkal booking with confirmation pressure</p>
+          </button>
+
+          <button class="route-card" data-route="flight">
+            <span>Flight</span>
+            <h3>BOM → DEL</h3>
+            <p>Flight booking with fare comparison</p>
+          </button>
+
+          <button class="route-card" data-route="bus">
+            <span>Bus</span>
+            <h3>Pune → Mumbai</h3>
+            <p>Quick local booking with simple seat choice</p>
+          </button>
+
+          <div class="route-mini-status">
+            <span>Live Route Scan</span>
+            <div>
+              <b></b>
+            </div>
+            <p id="scanText">Checking seat availability and Tatkal movement...</p>
+          </div>
+        </div>
+
+        <div class="phone-lab">
+          <div class="phone-glow"></div>
+
+          <div class="phone-top">
+            <span>9:41</span>
+            <b id="labRoute">TNA → CCH</b>
+          </div>
+
+          <div class="mode-tabs">
+            <button id="modeOne" class="active">🚆 Trains</button>
+            <button id="modeTwo">✈️ Flights</button>
+            <button id="modeThree">🚌 Buses</button>
+          </div>
+
+          <div class="ticket-card-live">
+            <span id="labTrain">22105 Indrayani Exp</span>
+            <h3 id="labStatus">Tatkal chance: 50/50</h3>
+
+            <div class="fare-board">
+              <p>Fare options</p>
+              <div class="seat-row">
+                <button id="fareOne">2S ₹110</button>
+                <button id="fareTwo" class="selected">CC ₹320</button>
+                <button id="fareThree">1A ₹1,760</button>
+              </div>
+            </div>
+
+            <div class="confidence-bar">
+              <p>Booking confidence</p>
+              <div><b id="confidenceBar"></b></div>
+            </div>
+
+            <div class="micro-feedback">
+              <span id="microOne">Seat choice unlocked</span>
+              <span id="microTwo">Payment stays in flow</span>
+            </div>
+
+            <button class="book-btn" id="labButton">Choose Seat</button>
+          </div>
+        </div>
+
+        <div class="lab-result">
+          <p class="eyebrow">Decision Signal</p>
+          <h3 id="resultTitle">Tatkal needs confidence signals.</h3>
+          <p id="resultText">
+            The app shows availability, waiting movement and seat options before the user commits to booking.
+          </p>
+
+          <div class="result-score">
+            <span>Stress Level</span>
+            <strong id="stressText">High → Medium</strong>
+          </div>
+
+          <div class="result-score second">
+            <span>Best UX Move</span>
+            <strong id="bestMove">Show status before payment</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section" id="research">
+      <div class="section-title wide">
+        <p class="eyebrow">03 / Research</p>
+        <h2>The research showed that users were not only booking tickets. They were trying to reduce uncertainty.</h2>
+      </div>
+
+      <div class="research-grid">
+        <article>
+          <h3>10</h3>
+          <p>participants tested the flow and gave feedback on booking confusion.</p>
+        </article>
+
+        <article>
+          <h3>3</h3>
+          <p>rounds of wireframing, prototyping and usability testing.</p>
+        </article>
+
+        <article>
+          <h3>80%</h3>
+          <p>satisfaction after incorporating feedback into the final design.</p>
+        </article>
+      </div>
+
+      <div class="insight-board">
+        <div class="insight-card dark">
+          <span>Persona Insight</span>
+          <h3>Irene wants online booking to feel as reliable as offline booking.</h3>
+          <p>
+            Irene represents users who are transitioning from offline ticket booking to digital travel platforms.
+            She wants speed, but not at the cost of clarity. Her biggest need is knowing whether her ticket, seat
+            and payment are actually secure before she commits.
+          </p>
+
+          <div class="persona-tags">
+            <span>Needs trust</span>
+            <span>Wants clear status</span>
+            <span>Prefers guided booking</span>
+          </div>
+        </div>
+
+        <button class="insight-image open-screen" data-img="Ixigo/persona.png" data-title="Ixigo Persona: Irene">
+          <img src="Ixigo/persona.png" alt="Ixigo persona Irene">
+        </button>
+      </div>
+    </section>
+
+    <section class="journey-section">
+      <div class="section-title wide">
+        <p class="eyebrow">04 / Booking Journey</p>
+        <h2>The experience was designed like a journey from doubt to decision.</h2>
+      </div>
+
+      <div class="journey-track">
+        <button class="journey-stop active" data-stop="search">
+          <span>01</span>
+          <h3>Search</h3>
+          <p>User enters route and date.</p>
+        </button>
+
+        <button class="journey-stop" data-stop="status">
+          <span>02</span>
+          <h3>Status</h3>
+          <p>User checks availability and confidence.</p>
+        </button>
+
+        <button class="journey-stop" data-stop="seat">
+          <span>03</span>
+          <h3>Seat</h3>
+          <p>User chooses exact seat.</p>
+        </button>
+
+        <button class="journey-stop" data-stop="pay">
+          <span>04</span>
+          <h3>Pay</h3>
+          <p>User completes checkout with trusted options.</p>
+        </button>
+      </div>
+
+      <div class="journey-output">
+        <div>
+          <p class="eyebrow">Journey Moment</p>
+          <h3 id="journeyTitle">Search without switching apps.</h3>
+          <p id="journeyText">
+            The first goal was to keep the travel search simple and prevent users from moving across different platforms.
+          </p>
+        </div>
+
+        <div class="boarding-pass">
+          <span id="passStep">SEARCH</span>
+          <h4 id="passRoute">TNA → CCH</h4>
+          <p id="passDetail">One place to begin the trip.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wireframe-section">
+      <div class="section-title wide">
+        <p class="eyebrow">05 / Wireframes</p>
+        <h2>I mapped the app structure before polishing the visual design.</h2>
+        <p>
+          The low-fidelity screens helped test how users move from landing to search status, seat selection and payment.
+        </p>
+      </div>
+
+      <button class="wide-image open-screen" data-img="Ixigo/wireframesixigo.png" data-title="Ixigo Wireframes">
+        <img src="Ixigo/wireframesixigo.png" alt="Ixigo wireframes">
+      </button>
+    </section>
+
+    <section class="iterations-section" id="iterations">
+      <div class="section-title wide">
+        <p class="eyebrow">06 / Major Design Iterations</p>
+        <h2>Each design change removed one major booking fear.</h2>
+      </div>
+
+      <div class="iteration-switcher">
+        <button class="iteration-tab active" data-iteration="seat">Pick my seat</button>
+        <button class="iteration-tab" data-iteration="status">Know my chance</button>
+        <button class="iteration-tab" data-iteration="payment">Pay without friction</button>
+      </div>
+
+      <div class="iteration-stage">
+        <div class="iteration-ticket">
+          <p class="eyebrow" id="iterationEyebrow">Iteration 1</p>
+          <h3 id="iterationTitle">Seat selection as per user will.</h3>
+          <p id="iterationText">
+            Instead of leaving seat preference uncertain, the app lets users choose their exact seat. This gives users
+            more control and reduces the feeling of waiting and hoping.
+          </p>
+
+          <div class="iteration-tags" id="iterationTags">
+            <span>Less uncertainty</span>
+            <span>More control</span>
+            <span>Clear seat choice</span>
+          </div>
+        </div>
+
+        <button class="iteration-image open-screen" id="iterationImageButton" data-img="Ixigo/iteration1.png" data-title="Iteration 1: Seat Selection">
+          <img src="Ixigo/iteration1.png" alt="Ixigo iteration 1 seat selection" id="iterationImage">
+        </button>
+      </div>
+    </section>
+
+    <section class="feature-system-section">
+      <div class="section-title wide">
+        <p class="eyebrow">07 / Feature System</p>
+        <h2>The final app is built around four confidence signals.</h2>
+      </div>
+
+      <div class="feature-orbit">
+        <div class="orbit-center">
+          <h3>BOOKING CONFIDENCE</h3>
+          <p>Every feature helps users feel more sure before paying.</p>
+        </div>
+
+        <article>
+          <span>01</span>
+          <h3>Availability</h3>
+          <p>Shows booking status before commitment.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Seat Choice</h3>
+          <p>Lets users select a preferred seat directly.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Payment Trust</h3>
+          <p>Supports familiar checkout options.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Mode Clarity</h3>
+          <p>Train, flight and bus flows stay organized.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-section" id="final">
+      <div class="section-title wide">
+        <p class="eyebrow">08 / Final Design</p>
+        <h2>A clean mobile travel app that helps users book with less stress.</h2>
+        <p>
+          The final design uses Ixigo-inspired yellow, deep navy, clear mobile cards and direct actions to reduce hesitation.
+        </p>
+      </div>
+
+      <button class="final-mockup open-screen" data-img="Artboard 1 copy 3@4x-100.jpg" data-title="Ixigo Final Design">
+        <img src="Ixigo/finalimage.png" alt="Ixigo final design">
+      </button>
+    </section>
+
+    <section class="prototype-section">
+      <div class="section-title wide">
+        <p class="eyebrow">09 / Figma Prototype</p>
+        <h2>The prototype is embedded directly so viewers can play with the booking flow.</h2>
+      </div>
+
+      <div class="figma-frame">
+        <iframe
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FU9EK40OYXa1Lel0i1hdg36%2Fixigo%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2-108%26viewport%3D-1095%252C-1393%252C0.62%26t%3D9HvQkiKSgvhPHpz4-1%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A108%26show-proto-sidebar%3D1%26mode%3Ddesign"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="reflection-section">
+      <div>
+        <p class="eyebrow">10 / Reflection</p>
+        <h2>What this project taught me</h2>
+      </div>
+
+      <p>
+        This project taught me that travel booking UX is about trust, not just speed. Users want to know what will happen
+        before they commit. Testing helped me turn a basic app flow into a more confident experience with clearer seat choice,
+        booking status and payment decisions.
+      </p>
+    </section>
+
+    <footer class="case-footer">
+      <a href="index.html">← Back to Portfolio</a>
+      <a href="#top">Back to Top ↑</a>
+    </footer>
+  </main>
+
+  <div class="screen-lightbox" id="screenLightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-top">
+        <p id="lightboxTitle">Preview</p>
+        <span>Press Esc to close</span>
+      </div>
+
+      <img src="" alt="Expanded preview" id="lightboxImage">
+    </div>
+  </div>
+
+  <div class="prototype-popup" id="prototypePopup">
+    <button class="prototype-popup-close" id="prototypePopupClose" aria-label="Close prototype">×</button>
+
+    <div class="prototype-popup-content">
+      <div class="prototype-popup-top">
+        <p>Ixigo Figma Prototype</p>
+        <span>Press Esc to close</span>
+      </div>
+
+      <iframe
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FU9EK40OYXa1Lel0i1hdg36%2Fixigo%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2-108%26viewport%3D-1095%252C-1393%252C0.62%26t%3D9HvQkiKSgvhPHpz4-1%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A108%26show-proto-sidebar%3D1%26mode%3Ddesign"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    const progressLine = document.getElementById("progressLine");
+
+    function updateProgressLine() {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = total > 0 ? (window.scrollY / total) * 100 : 0;
+      progressLine.style.width = progress + "%";
+    }
+
+    window.addEventListener("scroll", updateProgressLine);
+    window.addEventListener("load", updateProgressLine);
+    window.addEventListener("resize", updateProgressLine);
+
+    const routeData = {
+      tatkal: {
+        route: "TNA → CCH",
+        train: "22105 Indrayani Exp",
+        status: "Tatkal chance: 50/50",
+        confidence: "58%",
+        title: "Tatkal needs confidence signals.",
+        text: "The app shows availability, waiting movement and seat options before the user commits to booking.",
+        stress: "High → Medium",
+        best: "Show status before payment",
+        fares: ["2S ₹110", "CC ₹320", "1A ₹1,760"],
+        modes: ["🚆 Trains", "✈️ Flights", "🚌 Buses"],
+        scan: "Checking seat availability and Tatkal movement...",
+        microOne: "Seat choice unlocked",
+        microTwo: "Payment stays in flow",
+        button: "Choose Seat"
+      },
+      flight: {
+        route: "BOM → DEL",
+        train: "Morning Flight Search",
+        status: "Best fare window found",
+        confidence: "76%",
+        title: "Flights need fare clarity.",
+        text: "The app helps users compare realistic flight prices, timing and route options without losing focus in too many filters.",
+        stress: "Medium → Low",
+        best: "Compare fare before checkout",
+        fares: ["Economy ₹6,850", "Flexi ₹7,240", "Prime ₹8,110"],
+        modes: ["✈️ Flights", "🚆 Trains", "🚌 Buses"],
+        scan: "Comparing fare windows, airline timing and route value...",
+        microOne: "Fare comparison ready",
+        microTwo: "Best timing highlighted",
+        button: "Compare Flights"
+      },
+      bus: {
+        route: "Pune → Mumbai",
+        train: "Express Bus Options",
+        status: "Low-risk local trip",
+        confidence: "88%",
+        title: "Bus booking should stay simple.",
+        text: "For shorter trips, the app keeps the flow direct with visible prices, simple seat choice and quick checkout.",
+        stress: "Low",
+        best: "Keep the flow short",
+        fares: ["Sleeper ₹699", "AC ₹899", "Prime ₹1,099"],
+        modes: ["🚌 Buses", "🚆 Trains", "✈️ Flights"],
+        scan: "Finding nearby departures and seat choices...",
+        microOne: "Fast route match",
+        microTwo: "Low friction checkout",
+        button: "Select Bus"
+      }
+    };
+
+    const routeCards = document.querySelectorAll(".route-card");
+    const labRoute = document.getElementById("labRoute");
+    const labTrain = document.getElementById("labTrain");
+    const labStatus = document.getElementById("labStatus");
+    const confidenceBar = document.getElementById("confidenceBar");
+    const resultTitle = document.getElementById("resultTitle");
+    const resultText = document.getElementById("resultText");
+    const stressText = document.getElementById("stressText");
+    const bestMove = document.getElementById("bestMove");
+    const fareOne = document.getElementById("fareOne");
+    const fareTwo = document.getElementById("fareTwo");
+    const fareThree = document.getElementById("fareThree");
+    const scanText = document.getElementById("scanText");
+    const modeOne = document.getElementById("modeOne");
+    const modeTwo = document.getElementById("modeTwo");
+    const modeThree = document.getElementById("modeThree");
+    const microOne = document.getElementById("microOne");
+    const microTwo = document.getElementById("microTwo");
+    const labButton = document.getElementById("labButton");
+
+    routeCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        routeCards.forEach((item) => item.classList.remove("active"));
+        card.classList.add("active");
+
+        const selected = routeData[card.dataset.route];
+
+        labRoute.textContent = selected.route;
+        labTrain.textContent = selected.train;
+        labStatus.textContent = selected.status;
+        confidenceBar.style.width = selected.confidence;
+        resultTitle.textContent = selected.title;
+        resultText.textContent = selected.text;
+        stressText.textContent = selected.stress;
+        bestMove.textContent = selected.best;
+
+        fareOne.textContent = selected.fares[0];
+        fareTwo.textContent = selected.fares[1];
+        fareThree.textContent = selected.fares[2];
+
+        modeOne.textContent = selected.modes[0];
+        modeTwo.textContent = selected.modes[1];
+        modeThree.textContent = selected.modes[2];
+
+        scanText.textContent = selected.scan;
+        microOne.textContent = selected.microOne;
+        microTwo.textContent = selected.microTwo;
+        labButton.textContent = selected.button;
+      });
+    });
+
+    const journeyData = {
+      search: {
+        title: "Search without switching apps.",
+        text: "The first goal was to keep the travel search simple and prevent users from moving across different platforms.",
+        step: "SEARCH",
+        route: "TNA → CCH",
+        detail: "One place to begin the trip."
+      },
+      status: {
+        title: "Show confidence before commitment.",
+        text: "Booking status and availability cues help users understand whether the ticket is worth attempting.",
+        step: "STATUS",
+        route: "50/50",
+        detail: "Confirmation feels less invisible."
+      },
+      seat: {
+        title: "Let users choose their exact seat.",
+        text: "Seat selection reduces the feeling of random allocation and gives users more control.",
+        step: "SEAT",
+        route: "Aisle 45",
+        detail: "Preference becomes a real choice."
+      },
+      pay: {
+        title: "Make payment feel secure and familiar.",
+        text: "Payment options like UPI, cards and wallet-style checkout reduce friction at the final step.",
+        step: "PAY",
+        route: "UPI / Card",
+        detail: "Checkout stays inside the flow."
+      }
+    };
+
+    const journeyStops = document.querySelectorAll(".journey-stop");
+    const journeyTitle = document.getElementById("journeyTitle");
+    const journeyText = document.getElementById("journeyText");
+    const passStep = document.getElementById("passStep");
+    const passRoute = document.getElementById("passRoute");
+    const passDetail = document.getElementById("passDetail");
+
+    journeyStops.forEach((stop) => {
+      stop.addEventListener("click", () => {
+        journeyStops.forEach((item) => item.classList.remove("active"));
+        stop.classList.add("active");
+
+        const selected = journeyData[stop.dataset.stop];
+        journeyTitle.textContent = selected.title;
+        journeyText.textContent = selected.text;
+        passStep.textContent = selected.step;
+        passRoute.textContent = selected.route;
+        passDetail.textContent = selected.detail;
+      });
+    });
+
+    const iterationData = {
+      seat: {
+        eyebrow: "Iteration 1",
+        title: "Seat selection as per user will.",
+        text: "Instead of leaving seat preference uncertain, the app lets users choose their exact seat. This gives users more control and reduces the feeling of waiting and hoping.",
+        tags: ["Less uncertainty", "More control", "Clear seat choice"],
+        img: "Ixigo/iteration1.png",
+        preview: "Iteration 1: Seat Selection"
+      },
+      status: {
+        eyebrow: "Iteration 2",
+        title: "No worries of unsure booking.",
+        text: "The booking status flow gives users a clearer idea of confirmation chances, especially for Tatkal. It helps users understand whether a booking is worth attempting before they commit.",
+        tags: ["Tatkal clarity", "Status visibility", "Better decision"],
+        img: "Ixigo/iteration2.png",
+        preview: "Iteration 2: Booking Status"
+      },
+      payment: {
+        eyebrow: "Iteration 3",
+        title: "No third-party payment confusion.",
+        text: "The payment flow supports familiar options like UPI, cards, wallets and Apple-style checkout, helping users complete the booking without feeling redirected or lost.",
+        tags: ["Faster checkout", "Payment trust", "More options"],
+        img: "Ixigo/iteration3.png",
+        preview: "Iteration 3: Payment Flow"
+      }
+    };
+
+    const iterationTabs = document.querySelectorAll(".iteration-tab");
+    const iterationEyebrow = document.getElementById("iterationEyebrow");
+    const iterationTitle = document.getElementById("iterationTitle");
+    const iterationText = document.getElementById("iterationText");
+    const iterationTags = document.getElementById("iterationTags");
+    const iterationImage = document.getElementById("iterationImage");
+    const iterationImageButton = document.getElementById("iterationImageButton");
+
+    iterationTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        iterationTabs.forEach((item) => item.classList.remove("active"));
+        tab.classList.add("active");
+
+        const selected = iterationData[tab.dataset.iteration];
+
+        iterationEyebrow.textContent = selected.eyebrow;
+        iterationTitle.textContent = selected.title;
+        iterationText.textContent = selected.text;
+
+        iterationImage.src = selected.img;
+        iterationImage.alt = selected.preview;
+
+        iterationImageButton.dataset.img = selected.img;
+        iterationImageButton.dataset.title = selected.preview;
+
+        iterationTags.innerHTML = selected.tags.map((tag) => `<span>${tag}</span>`).join("");
+      });
+    });
+
+    const screenButtons = document.querySelectorAll(".open-screen");
+    const screenLightbox = document.getElementById("screenLightbox");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxTitle = document.getElementById("lightboxTitle");
+
+    screenButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        lightboxImage.src = button.dataset.img;
+        lightboxTitle.textContent = button.dataset.title;
+        screenLightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closeLightbox() {
+      screenLightbox.classList.remove("active");
+      lightboxImage.src = "";
+      document.body.style.overflow = "";
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    screenLightbox.addEventListener("click", (event) => {
+      if (event.target === screenLightbox) closeLightbox();
+    });
+
+    const prototypeTrigger = document.querySelector(".prototype-trigger");
+    const prototypePopup = document.getElementById("prototypePopup");
+    const prototypePopupClose = document.getElementById("prototypePopupClose");
+
+    prototypeTrigger.addEventListener("click", () => {
+      prototypePopup.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+
+    function closePrototypePopup() {
+      prototypePopup.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    prototypePopupClose.addEventListener("click", closePrototypePopup);
+
+    prototypePopup.addEventListener("click", (event) => {
+      if (event.target === prototypePopup) closePrototypePopup();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && screenLightbox.classList.contains("active")) closeLightbox();
+      if (event.key === "Escape" && prototypePopup.classList.contains("active")) closePrototypePopup();
+    });
+  </script>
+</body>
+</html>
